@@ -43,9 +43,33 @@ GPIO_Speed_50MHz,
 void GPIO_StrutrueInit(struct GPIO*p ){
   p->GPIO_Speed=GPIO_Speed_2MHz;
 }
-int main(){
-  struct GPIO NO;
+int main(){int h;
+  while(1){
+    printf("第几题？\n");
+    scanf("%d",&h);
+  if ( h==1)
+  {
+   qiandao_ti();
+  }
+  if (h==2)
+  {
+   hallo_world();
+  }
+  if (h==3)
+  {
+   struct GPIO NO;
   GPIO_StrutrueInit(&NO);
   printf ("默认GPIO速度为:%d\n",NO.GPIO_Speed);
   return 0;
-}           
+  }
+  if (h==5)
+  {
+    printf("结束！\n");
+    break;
+  }
+  
+  
+  
+  
+  
+} }          
